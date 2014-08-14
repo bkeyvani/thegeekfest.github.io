@@ -22,7 +22,7 @@ collections: []
 # Handling Reading
 safe:         false
 include:      [".htaccess", "assets", "contribute"]
-exclude:      ["*.sublime-project", "Gemfile", "Gemfile.lock", "params.json", "README.md", "Vagrantfile"]
+exclude:      ["*.sublime-project", "Gemfile", "Gemfile.lock", "params.json", "README.md", "temp", "Vagrantfile"]
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
@@ -48,7 +48,7 @@ excerpt_separator: "\n\n"
 detach:  false
 port:    4000
 host:    0.0.0.0
-baseurl: "/" # does not include hostname
+baseurl: "" # does not include hostname
 
 # Backwards-compatibility
 relative_permalinks: false

@@ -12,7 +12,7 @@ function postContactToGoogle(){
   var phone = $('#phone').val();
   if ((firstName !== "") && (lastName !== "") && (email !== "") && ((phone !== "") && (validateEmail(email)))) {
     $.ajax({
-      url: "https://docs.google.com/1x_wv9Qe_xjdvPS3IdeARMNU39uwfBv6nqFpq2ZixIzA/formResponse",
+      url: "https://docs.google.com/forms/d/1x_wv9Qe_xjdvPS3IdeARMNU39uwfBv6nqFpq2ZixIzA/formResponse",
       data: {
         "entry.260454260" : firstName,
         "entry.789254174" : lastName,
@@ -20,7 +20,7 @@ function postContactToGoogle(){
         "entry.195002150" : phone
       },
       type: "POST",
-      dataType: "xml",
+      dataType: "json",
       statusCode: {
         0: function (){
           // Reset form upon success
