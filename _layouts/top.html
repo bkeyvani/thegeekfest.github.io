@@ -21,6 +21,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" media="screen" href="{{ leadingpath }}/assets/stylesheets/stylesheet.css">
+  {% if page.form == "google" %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ leadingpath }}/assets/stylesheets/formview_ltr.css">
+  {% endif %}
 
   <title>{% if page.title %}{{ page.title }} • {% endif %}THE Geek Fest 2014</title>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

@@ -1,0 +1,430 @@
+.goog-inline-block {
+    position: relative;
+    display: -moz-inline-box;
+    display: inline-block;
+}
+
+* html .goog-inline-block {
+    display: inline;
+}
+
+*:first-child+html .goog-inline-block {
+    display: inline;
+}
+
+.ss-form-title {
+    margin: .67em 0;
+}
+
+.ss-form-desc {
+    font: inherit;
+    width: 99%;
+    margin: 0 0 1em;
+}
+.ss-required-asterisk {
+    color: #c43b1d;
+}
+
+.ss-no-ignore-whitespace {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.form-error-arg {
+    font-weight: bold;
+}
+
+
+table {
+    border-collapse: collapse
+}
+
+.ss-question-list {
+    list-style-type: none;
+}
+
+.ss-date input,.ss-datetime input,.ss-time input {
+    font: inherit;
+}
+
+.ss-hidden-button {
+    border: none;
+    display: none;
+    height: 0;
+    padding: 0;
+    width: 0;
+}
+
+.ss-picker-button-container {
+    background-color: #f5f5f5;
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: -ms-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: -o-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+    border: 1px solid #dcdcdc;
+    height: 32px;
+    margin: -1px -1px -1px 1ex;
+}
+
+.ss-picker-container {
+    left: 2ex;
+    position: absolute;
+    z-index: 2;
+}
+
+.ss-calendar-button {
+    padding: 5px 4px 4px 4px;
+    z-index: 1;
+}
+
+.ss-datetime-box {
+    border: 1px solid #dcdcdc;
+    margin-right: 2em;
+    min-height: 32px;
+    padding-left: 3px;
+    vertical-align: middle;
+}
+
+.ss-datetime-box select {
+    margin: 4px 3px;
+    vertical-align: middle;
+}
+
+.ss-datetime-box-spacer {
+    height: 32px;
+    vertical-align: middle;
+}
+
+.ss-grid {
+    overflow-x: auto;
+}
+
+.ss-gridnumbers {
+    text-align: center;
+    border-bottom: 1px solid #d3d8d3;
+}
+
+.ss-gridnumber {
+    display: block;
+    padding: 0.5em 0 .5em;
+}
+
+.ss-gridrow {
+    text-align: center;
+    color: #666;
+    border-bottom: 1px solid #d3d8d3;
+    padding: 0;
+}
+
+.ss-grid-button-label {
+    display: block;
+}
+
+.ss-grid-button-wrapper {
+    padding: .5em .25em;
+}
+
+.ss-grid-row-even {
+    background-color: #fff;
+}
+
+.ss-grid-row-odd {
+    background-color: #f2f2f2;
+}
+
+.ss-gridrow-leftlabel {
+    min-width: 100px;
+    max-width: 200px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.ss-grideditor-columns input {
+    line-height: 150%;
+}
+
+.ss-grideditor-editor .ss-magiclist-ul span.ss-header {
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+.ss-grid-separator {
+    border: 1px solid #e5e5e5;
+}
+
+.ss-scale {
+    overflow-x: auto;
+}
+
+.ss-scalenumbers {
+    text-align: center;
+}
+
+.ss-scalenumber {
+    display: block;
+    padding: 0.5em 0 .5em;
+}
+
+.ss-scalerow {
+    text-align: center;
+    color: #666;
+    border: 1px solid #d3d8d3;
+    border-left: 0;
+    border-right: 0;
+    padding: .5em .25em;
+}
+
+td.ss-leftlabel {
+    text-align: right;
+    padding-left: 0;
+}
+
+td.ss-rightlabel {
+    text-align: left;
+    padding-right: 0;
+}
+
+.ss-form-entry {
+    margin-bottom: 1.5em;
+}
+
+.ss-form-entry input {
+    vertical-align: middle;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.ss-form-entry select {
+    max-width: 100%;
+}
+
+.ss-q-title {
+    display: block;
+    font-weight: bold;
+}
+
+h2.ss-q-title {
+    margin-top: .83em;
+    margin-bottom: .83em;
+}
+
+.ss-q-help {
+    display: block;
+}
+
+.ss-q-help {
+    margin: .1em 0 .25em 0;
+}
+
+.ss-secondary-text {
+    color: #666;
+}
+
+.ss-textarea {
+    max-width: 99%;
+}
+
+.ss-q-long {
+    resize: vertical;
+}
+
+.ss-choices {
+    list-style: none;
+    padding: 0;
+}
+
+.ss-choices {
+    margin: .5em 0 0;
+}
+
+.ss-choice-item {
+    margin: 0;
+    line-height: 1.3em;
+    padding-bottom: .5em;
+}
+
+.ss-section-title {
+    background-color: #eee;
+    padding: 0.4em;
+    margin: 2em -0.4em 0;
+}
+
+.ss-section-description {
+    margin-top: 0.5em;
+}
+
+.ss-page-title {
+    margin: 0;
+    padding: 0;
+}
+
+.ss-formwidget-container:focus {
+    outline: none;
+}
+
+.ss-item {
+    margin: 12px 0;
+}
+
+.ss-image,.ss-video,.ss-embeddable-object-container {
+    max-width: 100%;
+    position: relative;
+}
+
+.ss-video {
+    border: none;
+}
+
+.ss-video-badge {
+    left: 0;
+    position: absolute;
+}
+
+.ss-video:focus,.ss-image:focus {
+    outline: none;
+}
+
+.errorbox-bad {
+    background-color: #ffe6cc;
+    padding: 2px;
+}
+
+.errorheader {
+    color: #c43b1d;
+}
+
+.error,.required,.errorbox-bad {
+    border: 2px solid;
+}
+
+.error,.required,.errorbox-bad {
+    border-color: #c43b1d;
+}
+
+.required-message,.error-message {
+    color: #c43b1d;
+    display: none;
+    font-size: 13px;
+}
+
+.required~.required-message,.error~.error-message {
+    display: block
+}
+
+ul.ss-choices.required {
+    margin-left: -3px;
+    margin-top: -3px;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.errorbox-bad {
+    background-color: #ffe6cc;
+    padding: 2px;
+}
+
+.errorheader {
+    color: #c43b1d;
+}
+
+#navigation-table {
+    width: 100%;
+    border: 0 none;
+}
+
+#navigation-buttons {
+    margin-bottom: 0;
+    border: 0 none;
+}
+
+/* form styles */
+form input, form select, form textarea {
+    width: 90%;
+    max-width: 570px;
+    min-height: 40px;
+    margin: 2px auto 5px auto;
+    font: 1em Helvetica, Arial, serif;
+    padding: 5px;
+}
+
+form input {
+    padding: 0 10px;
+}
+
+.phone input {
+    width: 69px;
+}
+
+form label {
+    margin-top: 10px;
+    width: 100%;
+}
+
+form select {
+    height: 40px;
+    margin: 2px 1px 5px 1px;
+    max-width: 99%;
+    padding-top: 10px;
+}
+
+form select option {
+    line-height: 40px;
+    width: 100%;
+    padding: 5px auto;
+}
+
+form button {
+    max-width: 100%;
+    min-width: 150px;
+    height: 40px;
+}
+
+form input[type="button"], input[type="submit"], input[type="reset"] { 
+    height: 40px; 
+    min-width: 150px;
+    max-width: 300px;
+}
+
+form input[type="color"] {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+form input[type="number"] {
+    max-width: 300px;
+}
+
+form input[type="radio"], form input[type="checkbox"] {
+    float: left;
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+form label input[type="radio"], form label input[type="checkbox"] {
+    margin-top: 0px;
+    min-height: 20px;
+}
+
+form label[for="rad"], form label[for="checkbox"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"]  {
+    max-width: 280px;
+    margin-top: 0px;
+}
+
+form fieldset div {
+    clear: both;
+    margin: 5px auto;
+}
+
+form.sg-nav {
+    margin: 10px 0;
+}
+
+form.sg-nav select {
+    height: 25px;
+    color: #000;
+}
+
+/* / form styles */
