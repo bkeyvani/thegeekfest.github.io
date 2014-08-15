@@ -6,3 +6,4 @@ _site/
 
 # Sublime project file
 *.sublime-project
+*.sublime-workspace
