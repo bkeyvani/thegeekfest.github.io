@@ -345,15 +345,11 @@ form input, form select, form textarea {
     min-height: 40px;
     margin: 2px auto 5px auto;
     font: 1em Helvetica, Arial, serif;
-    padding: 5px;
-}
-
-form input {
     padding: 0 10px;
 }
 
-.phone input {
-    width: 69px;
+form textarea {
+    padding: 5px 10px;
 }
 
 form label {
@@ -362,10 +358,12 @@ form label {
 }
 
 form select {
+    /* fix element appearance (height) in Chrome */
+    -webkit-appearance: none;
     height: 40px;
+    line-height: 40px;
     margin: 2px 1px 5px 1px;
     max-width: 99%;
-    padding-top: 10px;
 }
 
 form select option {
@@ -383,7 +381,13 @@ form button {
 form input[type="button"], input[type="submit"], input[type="reset"] { 
     height: 40px; 
     min-width: 150px;
-    max-width: 300px;
+    background: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+form input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #ccc;
 }
 
 form input[type="color"] {
