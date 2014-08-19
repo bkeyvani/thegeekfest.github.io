@@ -23,29 +23,29 @@ function validatePhone(phone) {
   return re.test(phone.val());
 }
 
-function validateForm (e) {
-    if (!e.value) {
-      $(e).addClass("required").attr("aria-invalid",true);
+function validateForm (jqObject) {
+    if (!jqObject.val()) {
+      jqObject.addClass("required").attr("aria-invalid",true);
     }
     else {
-      $(e).removeClass("required").removeAttr("aria-invalid");
+      jqObject.removeClass("required").removeAttr("aria-invalid");
     }
 
     // validate email field
-    if (e.id === "entry_809307019") {
-      validateEmail($(e));
+    if (jqObject.attr("id") === "entry_809307019") {
+      validateEmail(jqObject);
     }
 
     // validate phone field
-    if (e.id === "entry_843662138") {
-      validatePhone($(e));
+    if (jqObject.attr("id") === "entry_843662138") {
+      validatePhone(jqObject);
     }
 }
 
 $(document).ready(function() {
-  // add evenlistener to form fields on blur
-  $("input[required]").blur(function() {
-    validateForm(this);
+  // add evenlistener to required form fields on blur
+  $("*[required]").blur(function() {
+    validateForm($(this));
  });
 
   // focus on first name input
