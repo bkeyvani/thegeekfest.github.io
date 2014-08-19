@@ -378,6 +378,10 @@ Full-Width Styles
   background: #212121;
 }
 
+.video iframe {
+  width: 100%;
+  height: 360px;
+}
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
@@ -430,4 +434,8 @@ Small Device Styles
     font-size: 11px;
   }
 
+  .video iframe {
+  width: 100%;
+  height: 169px;
+  }
 }
