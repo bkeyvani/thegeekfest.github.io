@@ -1,0 +1,9 @@
+.DS_Store
+.vagrant/
+
+# Jekyll compiled site
+_site/
+
+# Sublime project file
+*.sublime-project
+*.sublime-workspace

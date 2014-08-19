@@ -1,0 +1,48 @@
+---
+
+---
+
+{% if page.theme == "home" %}
+    {% assign leadingpath = '.' %}
+{% else %}
+    {% assign leadingpath = '..' %}
+{% endif %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="description" content="{% if page.description %}{{ page.description }} • {% endif %}{{ site.title }} : {{ site.event_date}} @ {{ site.event_location }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="{{ leadingpath }}/assets/stylesheets/stylesheet.css">
+  {% if page.form == "google" %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ leadingpath }}/assets/stylesheets/formview_ltr.css">
+  {% endif %}
+
+  <title>{% if page.title %}{{ page.title }} • {% endif %}THE Geek Fest 2014</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="{{ leadingpath }}/assets/javascripts/main.js"></script>
+
+  {% include analytics.html %}
+</head>
+<body>
+  {% include header.html %}
+
+  <!-- MAIN CONTENT -->
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+
+    {{ content }}
+
+    </section>
+  </div>
+
+  {% include footer.html %}
+</body>
+</html>
