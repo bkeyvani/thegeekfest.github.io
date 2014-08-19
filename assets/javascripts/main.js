@@ -1,53 +1,72 @@
-
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (!re.test(email.val())) {
-    email.addClass("error").attr("aria-invalid",true);
+    email.addClass("error").attr("aria-invalid", true);
+  } else {
+    $(email).removeClass("error").removeAttr("aria-invalid");
   }
-  else {
-    $(email).removeClass("error").removeAttr("aria-invalid"); 
-  }
-  
+
   return re.test(email.val());
 }
 
 function validatePhone(phone) {
   var re = /^\d{10}$/;
   if (!re.test(phone.val())) {
-    phone.addClass("error").attr("aria-invalid",true);
+    phone.addClass("error").attr("aria-invalid", true);
+  } else {
+    $(phone).removeClass("error").removeAttr("aria-invalid");
   }
-  else {
-    $(phone).removeClass("error").removeAttr("aria-invalid"); 
-  }
-  
+
   return re.test(phone.val());
 }
 
-function validateForm (jqObject) {
-    if (!jqObject.val()) {
-      jqObject.addClass("required").attr("aria-invalid",true);
-    }
-    else {
-      jqObject.removeClass("required").removeAttr("aria-invalid");
+function checkRequiredFields(jqObjects) {
+  jqObjects.each(function () {
+    if (!$(this).val()) {
+      $(this).addClass("required").attr("aria-invalid", true);
+    } else {
+      $(this).removeClass("required").removeAttr("aria-invalid");
     }
 
     // validate email field
-    if (jqObject.attr("id") === "entry_809307019") {
-      validateEmail(jqObject);
+    if ($(this).attr("id") === "entry_809307019") {
+      validateEmail($(this));
     }
 
     // validate phone field
-    if (jqObject.attr("id") === "entry_843662138") {
-      validatePhone(jqObject);
+    if ($(this).attr("id") === "entry_843662138") {
+      validatePhone($(this));
     }
+  });
 }
 
-$(document).ready(function() {
+function validateFrom(requiredFields) {
+  // check all required fileds
+  checkRequiredFields(requiredFields);
+
+  var isInvalid = $("*[aria-invalid]");
+  //if page contains no 'aria-invalid' attribute then form is valid.
+  if (isInvalid.length === 0) {
+    return true;
+  }
+
+  isInvalid.focus();
+  return false;
+}
+
+$(document).ready(function () {
   // add evenlistener to required form fields on blur
-  $("*[required]").blur(function() {
-    validateForm($(this));
- });
+  var requiredFields = $("*[required]");
+
+  requiredFields.blur(function () {
+    checkRequiredFields($(this));
+  });
 
   // focus on first name input
-  $("#entry_1562922550").focus();
+  $("form input:first").focus();
+
+  $("form#ss-form").submit(function () {
+    var isValid = validateFrom(requiredFields);
+    return isValid;
+  });
 });
