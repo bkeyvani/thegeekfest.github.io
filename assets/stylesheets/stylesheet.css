@@ -378,6 +378,10 @@ Full-Width Styles
   background: #212121;
 }
 
+.video iframe {
+  width: 100%;
+  height: 360px;
+}
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
@@ -397,8 +401,12 @@ Small Device Styles
   }
 
   #project_title {
-  font-size: 32px;
+  font-size: 30px;
   }
+
+#project_tagline {
+  font-size: 12px;
+}
 
   h1 {
     font-size: 28px;
@@ -430,4 +438,8 @@ Small Device Styles
     font-size: 11px;
   }
 
+  .video iframe {
+  width: 100%;
+  height: 169px;
+  }
 }
