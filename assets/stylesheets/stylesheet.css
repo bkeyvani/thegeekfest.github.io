@@ -258,27 +258,62 @@ form {
 THE Geek Fest Custom Styles
 *******************************************************************************/
 
+.inner #project_title a {
+  color: #fff;
+  text-decoration: none;
+}
+
 address {
   padding: 5px 0;
+  clear: both;
 }
 
 ul.contacts {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.contacts li {
+  display: inline-block;
+  width: 170px;
+  vertical-align: top;
+}
+
+ul.contacts .first-item {
+  float: left;
+  text-align: left;
+}
+
+ul.contacts .last-item {
+  float: right;
+  text-align: right;
 }
 
 .contacts-container {
   margin-bottom: 1em;
   min-height: 110px;
+  display: inline-block;
 }
 
 .contacts-container img {
-  float: left;
   width: 100px;
   height: 100px;
-  border: 3px solid #ddd;
+  border: 3px solid #ccc;
   border-radius: 50%;
   padding: 2px;
-  margin: 0 1em 0 0;
+  margin: 0;
+}
+
+ul.contacts span {
+  font-size: 12em;
+  color: #ccc;
+  line-height: 1em;
+}
+
+.clear {
+  clear: both;
 }
 
 /*******************************************************************************
@@ -461,4 +496,42 @@ Small Device Styles
   width: 100%;
   height: 169px;
   }
+
+  ul.contacts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  }
+
+  ul.contacts li {
+    display: inline-block;
+    width: 170px;
+    vertical-align: top;
+  }
+
+  ul.contacts .first-item, ul.contacts .last-item {
+    float: left;
+    text-align: left;
+  }
+
+  .contacts-container {
+    margin-bottom: 1em;
+    min-height: 110px;
+    display: inline-block;
+  }
+
+  .contacts-container img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 0;
+  }
+
+  ul.contacts span {
+    display: none;
+  }
+
 }
