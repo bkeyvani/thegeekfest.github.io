@@ -15,5 +15,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network :forwarded_port, guest: 4000, host: 8080
+  config.vm.network :forwarded_port, guest: 4001, host: 8081
 end
