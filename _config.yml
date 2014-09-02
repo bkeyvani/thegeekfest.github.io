@@ -10,6 +10,11 @@ title: THE Geek Fest 2014
 # Event Information
 event_date: "Thursday, November 13th"
 event_location: "CPCC&#39;s Levine Campus"
+social-media:
+  - "facebook": "http://facebook.com/"
+  - "twitter": "http://twitter.com/"
+  - "google-plus": "http://plus.google.com/"
+  - "linkedin": "http://linkedin.com/"
 
 # Where things are
 source:      .
