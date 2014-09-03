@@ -316,6 +316,15 @@ ul.contacts span {
   clear: both;
 }
 
+.map-overlay {
+  background: transparent; 
+  position: relative; 
+  width: 100%;
+  height: 300px; 
+  top: 300px; 
+  margin-top: -300px;
+}
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
