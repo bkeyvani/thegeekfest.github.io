@@ -1,6 +1,20 @@
 <!-- FOOTER  -->
   <div id="footer_wrap" class="outer">
     <footer class="inner">
-      <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <p>Connect with us on 
+        <div id="social-media">
+          {% for media_hash in site.social-media %}
+            {% for media in media_hash %}
+            <a href="{{ media[1] }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-{{ media[0] }} fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-2x"></i>
+              </span>
+            </a>
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </p>
+      <p class="footnote">Published with <a href="http://pages.github.com">GitHub Pages</a></p>
     </footer>
   </div>

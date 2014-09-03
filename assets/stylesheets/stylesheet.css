@@ -325,6 +325,37 @@ ul.contacts span {
   margin-top: -300px;
 }
 
+.footnote {
+  font-size: 0.65em;
+  margin-bottom: 0;
+  text-align: right;  
+}
+
+#social-media a {
+  text-decoration: none;
+}
+
+/*
+Font Awsome Override
+*/
+
+.fa-inverse {
+  color: #333;
+  z-index: 5;
+}
+
+.fa-circle {
+  color: #666;
+}
+
+.fa-inverse:hover {
+  color: #333;
+}
+
+.fa-inverse:hover ~ .fa-circle {
+  color: #ddd;
+}
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -543,4 +574,23 @@ Small Device Styles
     display: none;
   }
 
+  #social-media {
+  text-align: center;
+  }
+
+  /*
+  Font Awsome Override
+  */
+
+  .fa-lg {
+    font-size: 1.5em;
+  }
+
+  .fa-inverse {
+    color: #333;
+  }
+
+  .fa-circle {
+    color: #ddd;
+  }
 }
