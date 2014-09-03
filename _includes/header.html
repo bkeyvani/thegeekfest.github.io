@@ -4,5 +4,16 @@
     <a id="forkme_banner" href="https://github.com/thegeekfest">View on GitHub</a>
     <h1 id="project_title"><a href="/">{{ site.title }}</a></h1>
     <h2 id="project_tagline">{{site.event_date}} @ {{ site.event_location }}</h2>
+    {% if page.navigation %}
+      <nav class="page-navigation">
+        <ul>
+        {% for navigation in page.navigation %}
+          {% for link in navigation %}
+            <li><a href="#{{ link[1] }}">{{ link[0] }}</a></li>
+          {% endfor %}
+        {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
   </header>
 </div>
