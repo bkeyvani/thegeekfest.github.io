@@ -9,7 +9,7 @@
         <ul>
         {% for navigation in page.navigation %}
           {% for link in navigation %}
-            <li><a href="#{{ link[1] }}">{{ link[0] }}</a></li>
+            <li class="nav-link"><a href="#{{ link[1] }}">{{ link[0] }}</a></li>
           {% endfor %}
         {% endfor %}
         </ul>
