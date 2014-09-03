@@ -263,6 +263,46 @@ THE Geek Fest Custom Styles
   text-decoration: none;
 }
 
+.nav-link {
+  background-color: #09f;
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  margin: 0 2px 0 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: #069;
+}
+
+.nav-link a {
+  color: #fff;
+}
+
+nav.page-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.wide {
+  width: 90%;
+}
+
+.big {
+  font-size: 1.6em;
+}
+
+.round-button {
+  border-radius: 10px;
+}
+
 address {
   padding: 5px 0;
   clear: both;
@@ -396,7 +436,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 50px 10px 0   10px;
 }
 
 #main_content.inner {
@@ -460,12 +500,11 @@ Full-Width Styles
 
 #main_content_wrap {
   background: #f2f2f2;
-  border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
 
 #main_content {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 #footer_wrap {
