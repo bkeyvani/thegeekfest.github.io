@@ -268,7 +268,7 @@ THE Geek Fest Custom Styles
   display: inline-block;
   height: 2em;
   line-height: 2em;
-  margin: 0 2px 0 0;
+  margin: 0;
   padding: 0 10px;
   text-align: center;
 }
@@ -296,7 +296,7 @@ nav.page-navigation ul {
 }
 
 .big {
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 .round-button {
