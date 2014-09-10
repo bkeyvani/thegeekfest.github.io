@@ -258,6 +258,20 @@ form {
 THE Geek Fest Custom Styles
 *******************************************************************************/
 
+#logo {
+  border: 0 none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  float: left;
+  margin: 10px 10px 10px 0;
+  max-width: 100px;
+  padding: 0;
+  width: 100px;
+}
+
 .inner #project_title a {
   color: #fff;
   text-decoration: none;
@@ -453,7 +467,7 @@ Full-Width Styles
 
 #project_tagline {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
@@ -524,6 +538,12 @@ Small Device Styles
     font-size:14px;
   }
 
+  #logo {
+    margin: 0 10px 10px 0;
+    max-width: 100px;
+    width: 75px;
+  }
+
   #downloads {
     display: none;
   }
@@ -534,7 +554,7 @@ Small Device Styles
   }
 
   #project_title {
-  font-size: 30px;
+  font-size: 20px;
   }
 
 #project_tagline {
