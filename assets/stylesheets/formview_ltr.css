@@ -363,8 +363,7 @@ form label {
 
 form select {
     /* fix element appearance (height) in Chrome */
-    -webkit-appearance: none;
-    height: 40px;
+    height: 100px;
     line-height: 40px;
     margin: 2px 1px 5px 1px;
     max-width: 99%;
@@ -434,6 +433,12 @@ form.sg-nav {
 form.sg-nav select {
     height: 25px;
     color: #000;
+}
+
+@media screen and (max-width: 480px) {
+    form select {
+        height: 100%;
+    }
 }
 
 /* / form styles */

@@ -37,14 +37,6 @@ function checkRequiredFields(jqObjects) {
     if ($(this).attr("id") === "entry_843662138") {
       validatePhone($(this));
     }
-
-    // validate participate checkboxes
-    var chkbxs = $('input:checked');
-    if (chkbxs.length < 1) {
-      $(this).parent().closest('ul').addClass("required").attr("aria-invalid", true);
-    } else {
-      $(this).parent().closest('ul').removeClass("required").removeAttr("aria-invalid");
-    }
   });
 }
 
