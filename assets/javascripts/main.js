@@ -55,8 +55,9 @@ function validateFrom(requiredFields) {
 }
 
 $(document).ready(function () {
-  // add evenlistener to required form fields on blur
-  var requiredFields = $("*[required]");
+  // add evenlistener to required form fields (aria-required="true" attribute)
+  // on blur
+  var requiredFields = $("*[aria-required=true]");
 
   requiredFields.blur(function () {
     checkRequiredFields($(this));
