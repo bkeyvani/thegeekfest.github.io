@@ -41,9 +41,9 @@ function checkRequiredFields(jqObjects) {
     // validate participate checkboxes
     var chkbxs = $('input:checked');
     if (chkbxs.length < 1) {
-      $('ul.ss-choices-required').addClass("required").attr("aria-invalid", true);
+      $(this).parent().closest('ul').addClass("required").attr("aria-invalid", true);
     } else {
-      $('ul.ss-choices-required').removeClass("required").removeAttr("aria-invalid");
+      $(this).parent().closest('ul').removeClass("required").removeAttr("aria-invalid");
     }
   });
 }
