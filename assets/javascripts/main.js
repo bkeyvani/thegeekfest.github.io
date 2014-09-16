@@ -37,6 +37,14 @@ function checkRequiredFields(jqObjects) {
     if ($(this).attr("id") === "entry_843662138") {
       validatePhone($(this));
     }
+
+    // validate participate checkboxes
+    var chkbxs = $('input:checked');
+    if (chkbxs.length < 1) {
+      $('ul.ss-choices-required').addClass("required").attr("aria-invalid", true);
+    } else {
+      $('ul.ss-choices-required').removeClass("required").removeAttr("aria-invalid");
+    }
   });
 }
 
@@ -55,8 +63,9 @@ function validateFrom(requiredFields) {
 }
 
 $(document).ready(function () {
-  // add evenlistener to required form fields on blur
-  var requiredFields = $("*[required]");
+  // add evenlistener to required form fields (aria-required="true" attribute)
+  // on blur
+  var requiredFields = $("*[aria-required=true]");
 
   requiredFields.blur(function () {
     checkRequiredFields($(this));

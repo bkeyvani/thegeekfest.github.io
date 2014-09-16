@@ -244,6 +244,10 @@ h2.ss-q-title {
     padding-bottom: .5em;
 }
 
+.ss-choice-item-control {
+    vertical-align: middle;
+}
+
 .ss-section-title {
     background-color: #eee;
     padding: 0.4em;
@@ -409,6 +413,7 @@ form input[type="radio"], form input[type="checkbox"] {
 
 form label input[type="radio"], form label input[type="checkbox"] {
     margin-top: 0px;
+    margin-bottom: 0px;
     min-height: 20px;
 }
 
