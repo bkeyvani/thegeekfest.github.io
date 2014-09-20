@@ -244,6 +244,10 @@ h2.ss-q-title {
     padding-bottom: .5em;
 }
 
+.ss-choice-item-control {
+    vertical-align: middle;
+}
+
 .ss-section-title {
     background-color: #eee;
     padding: 0.4em;
@@ -359,8 +363,7 @@ form label {
 
 form select {
     /* fix element appearance (height) in Chrome */
-    -webkit-appearance: none;
-    height: 40px;
+    height: 100px;
     line-height: 40px;
     margin: 2px 1px 5px 1px;
     max-width: 99%;
@@ -409,6 +412,7 @@ form input[type="radio"], form input[type="checkbox"] {
 
 form label input[type="radio"], form label input[type="checkbox"] {
     margin-top: 0px;
+    margin-bottom: 0px;
     min-height: 20px;
 }
 
@@ -429,6 +433,12 @@ form.sg-nav {
 form.sg-nav select {
     height: 25px;
     color: #000;
+}
+
+@media screen and (max-width: 480px) {
+    form select {
+        height: 100%;
+    }
 }
 
 /* / form styles */

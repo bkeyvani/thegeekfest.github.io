@@ -279,6 +279,7 @@ THE Geek Fest Custom Styles
 
 .nav-link {
   background-color: #09f;
+  color: #fff;
   display: inline-block;
   height: 2em;
   line-height: 2em;
@@ -298,6 +299,11 @@ THE Geek Fest Custom Styles
 nav.page-navigation ul {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+nav.page-navigation ul li {
+  display: inline-block;
   padding: 0;
 }
 
