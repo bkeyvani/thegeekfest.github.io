@@ -11,7 +11,11 @@
         <ul>
         {% for navigation in page.navigation %}
           {% for link in navigation %}
-            <li><a href="#{{ link[1] }}"><span class="nav-link">{{ link[0] }}</span></a></li>
+            {% if link[1] contains '//' %}
+              <li><a href="{{ link[1] }}"><span class="nav-link">{{ link[0] }}</span></a></li>
+            {% else %}  
+              <li><a href="#{{ link[1] }}"><span class="nav-link">{{ link[0] }}</span></a></li>
+            {% endif %}
           {% endfor %}
         {% endfor %}
         </ul>
