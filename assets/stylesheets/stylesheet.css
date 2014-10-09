@@ -296,16 +296,21 @@ THE Geek Fest Custom Styles
   color: #fff;
 }
 
-nav.page-navigation ul {
-  list-style: none;
+nav.page-navigation {
   margin: 0;
-  padding: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-nav.page-navigation ul li {
-  display: inline-block;
-  padding: 0;
+.nav-justified>li>a {
+  line-height: 30px;
+  color: #00aeff;
 }
+
+.nav-justified>li>a:hover {
+  background-color: #222;
+}
+
 
 .center {
   text-align: center;
