@@ -54,20 +54,22 @@ function validateFrom(requiredFields) {
   return false;
 }
 
-$(document).ready(function () {
-  // add evenlistener to required form fields (aria-required="true" attribute)
-  // on blur
-  var requiredFields = $("*[aria-required=true]");
+if (window.jQuery) {
+  $(document).ready(function () {
+    // add evenlistener to required form fields (aria-required="true" attribute)
+    // on blur
+    var requiredFields = $("*[aria-required=true]");
 
-  requiredFields.blur(function () {
-    checkRequiredFields($(this));
+    requiredFields.blur(function () {
+      checkRequiredFields($(this));
+    });
+
+    // focus on first name input
+    $("form input:first").focus();
+
+    $("form#ss-form").submit(function () {
+      var isValid = validateFrom(requiredFields);
+      return isValid;
+    });
   });
-
-  // focus on first name input
-  $("form input:first").focus();
-
-  $("form#ss-form").submit(function () {
-    var isValid = validateFrom(requiredFields);
-    return isValid;
-  });
-});
+};

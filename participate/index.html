@@ -14,8 +14,7 @@ form: google
 
 <!-- small hack to redirect the Google Form to local `thanks.html` page instead of Google confirmation page -->
 <script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-onload="if(submitted){window.location='{{ site.baseurl }}/thanks';}"></iframe>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='{{ site.baseurl }}/thanks';}"></iframe>
 <!-- end hack -->
 
 <form action="https://docs.google.com/forms/d/16SMTPQT8S_REEx5UZ7iDg7B0mmxk86cEi0xFEH-MRv8/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
