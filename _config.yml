@@ -9,11 +9,12 @@ title: THE Geek Fest 2014
 
 # Event Information
 event_date: "Thursday, November 13th"
-event_location: "CPCC&#39;s Levine Campus"
+event_location: "CPCC's Levine Campus"
 social-media:
   - "facebook": "https://www.facebook.com/thegeekfest"
   - "twitter": "https://twitter.com/thegeekfest"
-  - "google-plus": "http://plus.google.com/"
+  - "github-alt": "https://github.com/thegeekfest/thegeekfest.github.io"
+  - "google-plus": "https://plus.google.com/"
 
 # Where things are
 source:      .

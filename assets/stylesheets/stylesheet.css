@@ -431,7 +431,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 800px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -461,7 +461,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 0   10px;
+  padding: 70px 10px 0   10px;
 }
 
 #main_content.inner {
@@ -538,7 +538,7 @@ Full-Width Styles
 
 .video iframe {
   width: 100%;
-  height: 360px;
+  height: 439px;
 }
 /*******************************************************************************
 Small Device Styles
