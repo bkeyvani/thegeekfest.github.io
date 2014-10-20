@@ -1,24 +1,38 @@
 <!-- HEADER -->
 <div id="header_wrap" class="outer">
   <header class="inner">
-    <a id="forkme_banner" href="https://github.com/thegeekfest">View on GitHub</a>
     <a href="{{ site.baseurl }}/"><img id="logo" src="{{ site.baseurl }}/assets/images/logo-white-100.png" alt="THE Geek Fest Logo"></a>
     <h1 id="project_title"><a href="/">{{ site.title }}</a></h1>
-    <h2 id="project_tagline">{{site.event_date}} @ {{ site.event_location }}</h2>
+    <h2 id="project_tagline">{{site.event_date}}<br>@ {{ site.event_location }}</h2>
     <div class="clear"></div>
     {% if page.navigation %}
-      <nav class="page-navigation">
-        <ul>
-        {% for navigation in page.navigation %}
-          {% for link in navigation %}
-            {% if link[1] contains '//' %}
-              <li><a href="{{ link[1] }}"><span class="nav-link">{{ link[0] }}</span></a></li>
-            {% else %}  
-              <li><a href="#{{ link[1] }}"><span class="nav-link">{{ link[0] }}</span></a></li>
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-        </ul>
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" href="#">TGF</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav nav-justified" role="tablist">
+            {% for navigation in page.navigation %}
+              {% for link in navigation %}
+                {% if link[1] contains '//' %}
+                  <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+                {% else %}
+                  <li><a href="#{{ link[1] }}">{{ link[0] }}</a></li>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
       </nav>
     {% endif %}
   </header>

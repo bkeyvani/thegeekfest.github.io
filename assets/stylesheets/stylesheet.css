@@ -296,16 +296,21 @@ THE Geek Fest Custom Styles
   color: #fff;
 }
 
-nav.page-navigation ul {
-  list-style: none;
+nav.page-navigation {
   margin: 0;
-  padding: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-nav.page-navigation ul li {
-  display: inline-block;
-  padding: 0;
+.nav-justified>li>a {
+  line-height: 30px;
+  color: #00aeff;
 }
+
+.nav-justified>li>a:hover {
+  background-color: #222;
+}
+
 
 .center {
   text-align: center;
@@ -367,7 +372,7 @@ ul.contacts .last-item {
 }
 
 ul.contacts span {
-  font-size: 12em;
+  font-size: 8em;
   color: #ccc;
   line-height: 1em;
 }
@@ -377,22 +382,23 @@ ul.contacts span {
 }
 
 .map-overlay {
-  background: transparent; 
-  position: relative; 
+  background: transparent;
+  position: relative;
   width: 100%;
-  height: 300px; 
-  top: 300px; 
+  height: 300px;
+  top: 300px;
   margin-top: -300px;
 }
 
 .footnote {
   font-size: 0.65em;
   margin-bottom: 0;
-  text-align: right;  
+  text-align: right;
 }
 
 #social-media a {
   text-decoration: none;
+  margin: 0 5px;
 }
 
 /*
@@ -426,7 +432,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 800px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -456,7 +462,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 0   10px;
+  padding: 70px 10px 0   10px;
 }
 
 #main_content.inner {
@@ -533,7 +539,7 @@ Full-Width Styles
 
 .video iframe {
   width: 100%;
-  height: 360px;
+  height: 439px;
 }
 /*******************************************************************************
 Small Device Styles

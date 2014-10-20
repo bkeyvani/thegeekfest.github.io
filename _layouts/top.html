@@ -20,18 +20,17 @@
   <meta name="description" content="{% if page.description %}{{ page.description }} • {% endif %}{{ site.title }} : {{ site.event_date}} @ {{ site.event_location }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <!-- Font Awsome -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- / Font Awsome -->
-  
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/assets/stylesheets/stylesheet.css">
   {% if page.form == "google" %}
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/assets/stylesheets/formview_ltr.css">
   {% endif %}
 
   <title>{% if page.title %}{{ page.title }} • {% endif %}THE Geek Fest 2014</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/javascripts/main.js"></script>
 
   {% include analytics.html %}
 </head>
@@ -48,6 +47,9 @@
   </div>
 
   {% include footer.html %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/javascripts/main.js"></script>
   <script src="{{ site.baseurl }}/assets/javascripts/smooth-scroll.js"></script>
 </body>
 </html>
