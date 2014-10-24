@@ -383,11 +383,9 @@ ul.contacts span {
 
 .map-overlay {
   background: transparent;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 300px;
-  top: 300px;
-  margin-top: -300px;
 }
 
 .footnote {
@@ -664,4 +662,21 @@ Small Device Styles
   .fa-circle {
     color: #ddd;
   }
+
+  /* Hide Google Map on small-screen mobile devices */
+  .location-container {
+    background-image: url('../images/levine_campus_ext_00.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+  }
+
+  .map-overlay {
+    display: none;
+  }
+
+  #campus-map {
+    display: none;
+  }
+  /* /Hide Google Map on small-screen mobile devices */
 }
