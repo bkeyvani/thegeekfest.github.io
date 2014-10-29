@@ -56,6 +56,63 @@ function validateFrom(requiredFields) {
 
 if (window.jQuery) {
   $(document).ready(function () {
+    // Load embedded Google map on screen sizes larger than 600px
+    var toggleMap = function () {
+
+      var locationContainer, gmap, gmapScrollPreventer, location;
+
+      locationContainer = $("#location-container");
+      // if screen width is less than 600px
+      if ($(window).width() > 600) {
+        $("#location-container")
+          .css("background-color", "transparent")
+          .css("background-image", "none")
+          .css("background-position", "")
+          .css("background-repeat", "")
+          .css("height", "300px");
+
+        gmapScrollPreventer = document.createElement("DIV");
+        gmapScrollPreventer.id = 'map-overlay';
+        $("#location-container").append(gmapScrollPreventer);
+        $("#map-overlay")
+          .css("background", "transparent")
+          .css("position", "absolute")
+          .css("width", "100%")
+          .css("height", "300px")
+          .click(function() {
+            $("#map-overlay").css("pointer-events", "none");
+          });
+
+        gmap = document.createElement("IFRAME");
+        gmap.id = 'campus-map';
+        location = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3264.0421688414367!2d-80.69445979999999!3d35.10565789999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8854246c3b400e35%3A0xc61cfd104a8653f0!2sLevine+II%2C+2800+Campus+Ridge+Rd%2C+Matthews%2C+NC+28105!5e0!3m2!1sen!2sus!4v1409667414849';
+        $("#location-container").append(gmap);
+        $("#campus-map").attr("frameborder", "0")
+          .attr("src", location)
+          .css("width", "100%")
+          .css("height", "300px")
+          .css("border", "0");
+      } else {
+        // if screen width is less than 600px
+        $("#map-overlay").remove()
+        $("#campus-map").remove()
+        $("#location-container")
+          .css("background-color", "transparent")
+          .css("background-image", "url('assets/images/levine_campus_ext_00.jpg')")
+          .css("background-position", "center")
+          .css("background-repeat", "no-repeat")
+          .css("height", "300px");
+      }
+    };
+
+    if ($(window).width() > 600) {
+      toggleMap();
+    }
+
+    $(window).resize(function() {
+      toggleMap();
+    });
+
     // add evenlistener to required form fields (aria-required="true" attribute)
     // on blur
     var requiredFields = $("*[aria-required=true]");
@@ -72,4 +129,4 @@ if (window.jQuery) {
       return isValid;
     });
   });
-};
+}
