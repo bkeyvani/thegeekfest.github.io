@@ -94,7 +94,7 @@ h6 {
 }
 
 p {
-  margin: 10px 0 15px 0;
+  margin: 10px 0;
 }
 
 footer p {
@@ -258,6 +258,14 @@ form {
 THE Geek Fest Custom Styles
 *******************************************************************************/
 
+.section-heading {
+  margin-top: 40px;
+}
+
+.first-heading {
+  margin-top: 10px;
+}
+
 #logo {
   border: 0 none;
   box-shadow: none;
@@ -371,10 +379,14 @@ ul.contacts .last-item {
   margin: 0;
 }
 
+.contacts-container h4 {
+  margin-top: 0;
+}
+
 ul.contacts span {
   font-size: 8em;
   color: #ccc;
-  line-height: 1em;
+  line-height: 100px;
 }
 
 .clear {
