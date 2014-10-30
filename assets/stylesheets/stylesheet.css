@@ -142,10 +142,6 @@ img {
   border: 1px solid #ebebeb;
 
   box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
 p img {
@@ -166,8 +162,6 @@ pre, code {
   font-size: 14px;
 
   border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
 }
 
 pre {
@@ -269,11 +263,8 @@ THE Geek Fest Custom Styles
 #logo {
   border: 0 none;
   box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  -ms-box-shadow: none;
   float: left;
+  height: 100px;
   margin: 10px 10px 10px 0;
   max-width: 100px;
   padding: 0;
