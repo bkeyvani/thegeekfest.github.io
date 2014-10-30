@@ -432,6 +432,18 @@ Font Awsome Override
   color: #ddd;
 }
 
+#tgfLiveIframe {
+  height: 385px;
+  width: 100%;
+}
+
+#tgfLiveFooter {
+  font-size: 11px;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%
+}
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/

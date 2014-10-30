@@ -128,5 +128,22 @@ if (window.jQuery) {
       var isValid = validateFrom(requiredFields);
       return isValid;
     });
+
+  $('#tgfliveModal').on('shown.bs.modal', function (e) {
+    var liveDate, todayDate;
+    liveDate = new Date('2014-11-13T09:00:00.000-05:00');
+    todayDate = new Date();
+    // load TGF Live iframe if todayDate is after liveDate
+    if (todayDate > liveDate) {
+      $('.modal-body')
+        .append('<iframe id="tgfLiveIframe" src="http://cdn.livestream.com/embed/cpcc?layout=4&color=0xe7e7e7&autoPlay=false&mute=false&iconColorOver=0x888888&iconColor=0x777777" frameborder="0" scrolling="no"></iframe><div id="tgfLiveFooter">Watch <a href="http://www.livestream.com/?utm_source=lsplayer&amp;utm_medium=embed&amp;utm_campaign=footerlinks" title="live streaming video">live streaming video</a> from <a href="http://www.livestream.com/cpcc?utm_source=lsplayer&amp;utm_medium=embed&amp;utm_campaign=footerlinks" title="Watch cpcc at livestream.com">cpcc</a> at livestream.com</div>');
+    }
+  });
+  $('#tgfliveModal').on('hidden.bs.modal', function (e) {
+    // unload TGF Live iframe
+    $('#tgfLiveIframe').remove()
+    $('#tgfLiveFooter').remove()
+  });
+
   });
 }
