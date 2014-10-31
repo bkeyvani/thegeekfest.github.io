@@ -94,7 +94,7 @@ h6 {
 }
 
 p {
-  margin: 10px 0 15px 0;
+  margin: 10px 0;
 }
 
 footer p {
@@ -142,10 +142,6 @@ img {
   border: 1px solid #ebebeb;
 
   box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
 p img {
@@ -166,8 +162,6 @@ pre, code {
   font-size: 14px;
 
   border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
 }
 
 pre {
@@ -258,14 +252,19 @@ form {
 THE Geek Fest Custom Styles
 *******************************************************************************/
 
+.section-heading {
+  margin-top: 40px;
+}
+
+.first-heading {
+  margin-top: 10px;
+}
+
 #logo {
   border: 0 none;
   box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  -ms-box-shadow: none;
   float: left;
+  height: 100px;
   margin: 10px 10px 10px 0;
   max-width: 100px;
   padding: 0;
@@ -371,10 +370,14 @@ ul.contacts .last-item {
   margin: 0;
 }
 
+.contacts-container h4 {
+  margin-top: 0;
+}
+
 ul.contacts span {
   font-size: 8em;
   color: #ccc;
-  line-height: 1em;
+  line-height: 100px;
 }
 
 .clear {
@@ -383,11 +386,9 @@ ul.contacts span {
 
 .map-overlay {
   background: transparent;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 300px;
-  top: 300px;
-  margin-top: -300px;
 }
 
 .footnote {
@@ -420,6 +421,18 @@ Font Awsome Override
 
 .fa-inverse:hover ~ .fa-circle {
   color: #ddd;
+}
+
+#tgfLiveIframe {
+  height: 385px;
+  width: 100%;
+}
+
+#tgfLiveFooter {
+  font-size: 11px;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%
 }
 
 /*******************************************************************************
@@ -537,10 +550,47 @@ Full-Width Styles
   background: #212121;
 }
 
-.video iframe {
+#video {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#video iframe {
   width: 100%;
   height: 439px;
 }
+
+#video img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#video div {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
+
+#video #ytPlayBtn {
+  margin: 0;
+  opacity: 0.7;
+  padding: 0;
+  width: 80px;
+}
+
+#location-container {
+  background-color: #ccc;
+  background-image: url('../images/levine_campus_ext_00.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
@@ -603,7 +653,7 @@ Small Device Styles
     font-size: 11px;
   }
 
-  .video iframe {
+  #video iframe {
   width: 100%;
   height: 169px;
   }
@@ -664,4 +714,13 @@ Small Device Styles
   .fa-circle {
     color: #ddd;
   }
+
+  /* Hide Google Map on small-screen mobile devices */
+  #location-container {
+    background-image: url('../images/levine_campus_ext_00.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+  }
+  /* /Hide Google Map on small-screen mobile devices */
 }

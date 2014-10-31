@@ -6,38 +6,58 @@ navigation:
  - Participate: participate
  - Contact: contact
  - Location: location
+ - Program: '//sites.google.com/a/cpcc.edu/tgf/program'
  - Sponsors: '//sites.google.com/a/cpcc.edu/tgf/'
+ - 'Prior Events': '//www.cpcc.edu/thegeekfest/prior'
+ - 'TGF Live!': tgflive
 ---
 
-<h3>
+<h3 class="section-heading first-heading">
   <a name="welcome" class="anchor" href="#welcome">
     <span class="octicon octicon-link"></span>
   </a>Welcome!
 </h3>
 
-<p>We’re glad you found us. Here you can find basic information about our annual event and learn how to get involved!!</p>
+<p>We’re glad you found us. Here you can find basic information about our annual
+event and learn how to get involved!!</p>
 
-<h3>
+<h3 class="section-heading">
   <a name="about" class="anchor" href="#about">
     <span class="octicon octicon-link"></span>
   </a>About
 </h3>
 
-<p><strong>THE Geek Fest (TGF)</strong> is an exciting and eclectic annual celebration of the “geek” in all of us. This event is designed to educate, energize, and inspire the minds of students and community members by highlighting the creative innovations in technology, media, and industry. It recognizes the imaginative efforts made by individuals and companies in their respective fields and provides a venue to explore the technologies that have become so integral to our everyday lives.</p>
-<div class="video">
-  <iframe src="//www.youtube.com/embed/sFX73BJWmkc?rel=0" frameborder="0" allowfullscreen></iframe>
+<p><strong>THE Geek Fest (TGF)</strong> is an exciting and eclectic annual
+celebration of the “geek” in all of us. This event is designed to educate,
+energize, and inspire the minds of students and community members by
+highlighting the creative innovations in technology, media, and industry. It
+recognizes the imaginative efforts made by individuals and companies in their
+respective fields and provides a venue to explore the technologies that have
+become so integral to our everyday lives.</p>
+<div id="video">
+  <a href="//youtu.be/sFX73BJWmkc" id="ytLink">
+    <img src="assets/images/2014-11-13-geekfest-banner.png" alt="Click to watch
+    a short video about THE Geek Fest">
+    <div>
+      <img id="ytPlayBtn" src="assets/images/YouTube-social-icon_red_128px.png"
+      alt="play" role="button">
+    </div>
+  </a>
 </div>
 
-<h3>
+<h3 class="section-heading">
   <a name="participate" class="anchor" href="#participate">
     <span class="octicon octicon-link"></span>
   </a>Register to Attend or Be a Part of the Event
 </h3>
 
-<p>THE Geek Fest is a community driven event, so we depend on the help and creativity of a lot of folks. We are looking for speakers, exhibitors, sponsors and volunteers. Please complete our short form to get started.</p>
-<a class="btn btn-lg btn-primary" href="participate/">Be a part of THE Geek Fest</a>
+<p>THE Geek Fest is a community driven event, so we depend on the help and
+creativity of a lot of folks. We are looking for speakers, exhibitors, sponsors
+and volunteers. Please complete our short form to get started.</p>
+<a class="btn btn-lg btn-primary" href="participate/">Be a part of THE Geek
+  Fest</a>
 
-<h3>
+<h3 class="section-heading">
   <a name="contact" class="anchor" href="#xontact">
     <span class="octicon octicon-link"></span>
   </a>Contact
@@ -70,20 +90,62 @@ navigation:
 <div class="clear"></div><!-- clear li floats -->
 <p>who are happy to answer your questions or just chat about the event.</p>
 
-<h3>
+<h3 class="section-heading">
   <a name="location" class="anchor" href="#location">
     <span class="octicon octicon-link"></span>
   </a>Location
 </h3>
 
-<p>The event is held in Matthews, NC just south of Charlotte at <a href="http://www.cpcc.edu/campuses/levine/directions-map">CPCC's beautiful Levine campus</a>.</p>
-<!-- disable scrolling touch on mobile -->
-<div class="map-overlay" onClick="style.pointerEvents='none'"></div>
-<iframe id="campus-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3264.0421688414367!2d-80.69445979999999!3d35.10565789999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8854246c3b400e35%3A0xc61cfd104a8653f0!2sLevine+II%2C+2800+Campus+Ridge+Rd%2C+Matthews%2C+NC+28105!5e0!3m2!1sen!2sus!4v1409667414849" width="100%" height="300" frameborder="0" style="border:0"></iframe>
+<p>The event is held in Matthews, NC just south of Charlotte at <a
+  href="http://www.cpcc.edu/campuses/levine/directions-map">CPCC's beautiful
+  Levine campus</a>.</p>
+<div id="location-container">
+</div><!-- /.location-container -->
 <p>The address is:</p>
 <address>
   <strong>
-    <a href="https://www.google.com/maps/place/2800+Campus+Ridge+Rd,+Matthews,+NC+28105" title="load this address into Google Maps">2800 Campus Ridge Rd,<br>
+    <a href="https://www.google.com/maps/place/2800+Campus+Ridge+Rd,+Matthews,+NC+28105"
+      title="load this address into Google Maps">2800 Campus Ridge Rd,<br>
     Matthews, NC 28105</a>
   </strong>
 </address>
+
+<h3 class="section-heading">
+  <a name="tgflive" class="anchor" href="#tgflive">
+    <span class="octicon octicon-link"></span>
+  </a>TGF Live!
+</h3>
+
+<p>TGF will be broadcast live on <strong>Nov. 13, 2014</strong>.</p>
+
+<!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#tgfliveModal">
+  Watch TGF Live!
+</button>
+<!-- Modal -->
+<div class="modal fade" id="tgfliveModal" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">TGF Live!</h4>
+      </div><!-- /.modal-header -->
+      <div class="modal-body">
+        <p>Live broadcast will begin on <strong>Nov. 13, 2014 09:00 (EST)
+        </strong>. Please stay tuned.</p>
+        <!-- TGF Live content will be added via JavaScript -->
+      </div><!-- /.modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Close
+        </button>
+<!--         <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div><!-- /.modal-footer -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /#myModal -->
+<!-- /Modal -->
