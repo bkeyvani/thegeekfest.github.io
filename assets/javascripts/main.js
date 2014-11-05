@@ -138,11 +138,11 @@ if (window.jQuery) {
 
       if (todayDate > liveDate) {
         $('.modal-body')
-          .append('<iframe id="tgfLiveIframe" frameborder="0" ' + embedUrl + 'scrolling="no"></iframe>' +
-                  '<div id="tgfLiveFooter">Watch ' +
-                  '  <a href="' + url1 + '" title="live streaming video">live streaming video</a>' +
-                  '  from <a href="' + url2 + '" title="Watch cpcc at livestream.com">cpcc</a>' +
-                  '  at livestream.com' +
+          .append('<iframe id="tgfLiveIframe" frameborder="0" src="' + embedUrl +
+                  '" scrolling="no"></iframe><div id="tgfLiveFooter">Watch ' +
+                  '<a href="' + url1 + '" title="live streaming video">live' +
+                  'streaming video</a> from <a href="' + url2 + '" title="' +
+                  'Watch cpcc at livestream.com">cpcc</a> at livestream.com' +
                   '</div>');
       }
     });
