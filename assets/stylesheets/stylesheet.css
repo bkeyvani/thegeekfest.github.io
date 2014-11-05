@@ -430,6 +430,11 @@ ul.contacts span {
   width: 100%
 }
 
+/* hide TGF Live from touch devices */
+.touch {
+  display: none;
+}
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -578,10 +583,10 @@ Full-Width Styles
   width: 80px;
 }
 
+/* Hide Google Map on small-screen mobile devices */
 #location-container {
-  background-color: #ccc;
   background-image: url('../images/levine_campus_ext_00.jpg');
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 300px;
 }
@@ -708,13 +713,5 @@ Small Device Styles
 
   .fa-circle {
     color: #ddd;
-  }
-
-  /* Hide Google Map on small-screen mobile devices */
-  #location-container {
-    background-image: url('../images/levine_campus_ext_00.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 300px;
   }
 }
