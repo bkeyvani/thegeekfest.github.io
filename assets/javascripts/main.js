@@ -132,7 +132,7 @@ if (window.jQuery) {
       var liveDate, todayDate, embedUrl, url1, url2;
       liveDate = new Date('2014-11-13T09:00:00.000-05:00');
       todayDate = new Date();
-      embedUrl = 'http://cdn.livestream.com/embed/cpcc?layout=4&color=0xe7e7e7&autoPlay=false&mute=false&iconColorOver=0x888888&iconColor=0x777777'
+      embedUrl = 'http://cdn.livestream.com/embed/cpcc?layout=4&amp;autoPlay=true'
       url1 = 'http://www.livestream.com/?utm_source=lsplayer&amp;utm_medium=embed&amp;utm_campaign=footerlinks'
       url2 = 'http://www.livestream.com/cpcc?utm_source=lsplayer&amp;utm_medium=embed&amp;utm_campaign=footerlinks'
 
