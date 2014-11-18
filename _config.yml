@@ -53,7 +53,7 @@ excerpt_separator: "\n\n"
 detach:  false
 port:    4001
 host:    0.0.0.0
-baseurl: "" # does not include hostname
+baseurl: "/thegeekfest.github.io" # does not include hostname
 
 # Backwards-compatibility
 relative_permalinks: false
