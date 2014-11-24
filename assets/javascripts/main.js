@@ -168,7 +168,7 @@ if (window.jQuery) {
     $('#ytLink').click(function() {
       $(this).remove();
       $("#video")
-        .append("<iframe src='//www.youtube.com/embed/sFX73BJWmkc'" +
+        .append("<iframe src='//www.youtube.com/embed/diJ1uDQ2IIc?list=PLuRg1jByqFYMIKX0wi4_8T3SBeF0XwFCL'" +
                 "frameborder='0' allowfullscreen></iframe>");
       return false;
     });
