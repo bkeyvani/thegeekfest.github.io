@@ -164,18 +164,18 @@ if (window.jQuery) {
                 '</p>');
       }
 
-    // replace placeholder with YouTube video - #perfmatters
-    $('#ytLink').click(function() {
-      $(this).remove();
-      $("#video")
-        .append("<iframe src='//www.youtube.com/embed/sFX73BJWmkc'" +
+      // replace placeholder with YouTube video - #perfmatters
+      $('#ytLink').click(function() {
+        $(this).remove();
+        $("#video")
+        .append("<iframe src='//www.youtube.com/embed/diJ1uDQ2IIc?list=PLuRg1jByqFYMIKX0wi4_8T3SBeF0XwFCL'" +
                 "frameborder='0' allowfullscreen></iframe>");
-      return false;
-    });
+        return false;
+      });
 
-    // close navbar-menu on mobile devices upon making a selection
-    $('#navbar-collapse-1 a').click(function() {
-      $('#navbar-collapse-1').collapse('hide');
-    });
+      // close navbar-menu on mobile devices upon making a selection
+      $('#navbar-collapse-1 a').click(function() {
+        $('#navbar-collapse-1').collapse('hide');
+      });
   });
 }
