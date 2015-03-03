@@ -128,54 +128,54 @@ if (window.jQuery) {
     });
 
     // load TGF Live iframe if modal is loaded and todayDate is after liveDate
-      $('#tgfliveModal').on('shown.bs.modal', function (e) {
-        var liveDate, todayDate, embedUrl, url1, url2;
-        liveDate = new Date('2014-11-13T09:00:00.000-05:00');
-        todayDate = new Date();
-        embedUrl = 'http://cdn.livestream.com/embed/cpcc?layout=4&amp;autoPlay=true'
-        url1 = 'http://www.livestream.com/?utm_source=lsplayer&amp;utm_medium=embed&amp;utm_campaign=footerlinks'
-        url2 = 'http://www.livestream.com/cpcc?utm_source=lsplayer&amp;utm_medium=embed&amp;utm_campaign=footerlinks'
+    $('#tgfliveModal').on('shown.bs.modal', function (e) {
+      var liveDate, todayDate, embedUrl, url1, url2;
+      liveDate = new Date('2014-11-13T09:00:00.000-05:00');
+      todayDate = new Date();
+      embedUrl = 'http://cdn.livestream.com/embed/cpcc?layout=4&amp;autoPlay=true'
+      url1 = 'http://www.livestream.com/?utm_source=lsplayer&amp;utm_medium=embed&amp;utm_campaign=footerlinks'
+      url2 = 'http://www.livestream.com/cpcc?utm_source=lsplayer&amp;utm_medium=embed&amp;utm_campaign=footerlinks'
 
-        if (todayDate > liveDate) {
-          $('.modal-body')
+      if (todayDate > liveDate) {
+        $('.modal-body')
           .append('<iframe id="tgfLiveIframe" frameborder="0" src="' + embedUrl +
                   '" scrolling="no"></iframe><div id="tgfLiveFooter">Watch ' +
                   '<a href="' + url1 + '" title="live streaming video">live' +
                   'streaming video</a> from <a href="' + url2 + '" title="' +
                   'Watch cpcc at livestream.com">cpcc</a> at livestream.com' +
                   '</div>');
-        }
-      });
+      }
+    });
 
-      // unload TGF Live iframe
-      $('#tgfliveModal').on('hidden.bs.modal', function (e) {
-        $('#tgfLiveIframe').remove()
-        $('#tgfLiveFooter').remove()
-      });
+    // unload TGF Live iframe
+    $('#tgfliveModal').on('hidden.bs.modal', function (e) {
+      $('#tgfLiveIframe').remove()
+      $('#tgfLiveFooter').remove()
+    });
 
-      // hide TGF live on mobile devices
-      if('ontouchstart' in document.documentElement) {
-        $('#tgfliveinfo button').addClass('touch');
-        $('#tgfliveinfo')
+    // hide TGF live on mobile devices
+    if('ontouchstart' in document.documentElement) {
+      $('#tgfliveinfo button').addClass('touch');
+      $('#tgfliveinfo')
         .append('<p class="alert alert-warning" role="alert">' +
                 '<i class="fa fa-frown-o fa-2x"></i>' +
                 '&nbsp;TGF Live! is not currently supported on mobiles / tablets.' +
                 '&nbsp;You may watch the event Live, from any laptop / desktop computer.' +
                 '</p>');
-      }
+    }
 
-      // replace placeholder with YouTube video - #perfmatters
-      $('#ytLink').click(function() {
-        $(this).remove();
-        $("#video")
+    // replace placeholder with YouTube video - #perfmatters
+    $('#ytLink').click(function() {
+      $(this).remove();
+      $("#video")
         .append("<iframe src='//www.youtube.com/embed/diJ1uDQ2IIc?list=PLuRg1jByqFYMIKX0wi4_8T3SBeF0XwFCL'" +
                 "frameborder='0' allowfullscreen></iframe>");
         return false;
-      });
+    });
 
-      // close navbar-menu on mobile devices upon making a selection
-      $('#navbar-collapse-1 a').click(function() {
-        $('#navbar-collapse-1').collapse('hide');
-      });
+    // close navbar-menu on mobile devices upon making a selection
+    $('#navbar-collapse-1 a').click(function() {
+      $('#navbar-collapse-1').collapse('hide');
+    });
   });
 }
