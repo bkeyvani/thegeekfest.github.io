@@ -354,7 +354,6 @@ ul.contacts .last-item {
 
 .contacts-container {
   margin-bottom: 1em;
-  min-height: 110px;
   display: inline-block;
 }
 
@@ -681,7 +680,6 @@ Small Device Styles
   .contacts-container {
     display: inline-block;
     margin-bottom: 1em;
-    min-height: 110px;
   }
 
   .contacts-container img {
