@@ -299,6 +299,14 @@ nav.page-navigation {
   margin: 0;
 }
 
+/* overwrite bootstraps style to fix issue with content wrapping into a second
+ * row */
+.nav-justified>li {
+    display: table-cell;
+    min-width: 1%;
+    width: 20%;
+}
+
 .nav-justified>li>a {
   color: #00aeff;
   line-height: 30px;
