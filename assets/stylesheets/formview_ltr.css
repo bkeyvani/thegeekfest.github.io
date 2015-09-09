@@ -357,6 +357,7 @@ form textarea {
 }
 
 form label {
+    display: inline;
     margin-top: 10px;
     width: 100%;
 }
@@ -382,7 +383,7 @@ form button {
 }
 
 form input[type="button"], input[type="submit"], input[type="reset"] { 
-    height: 40px; 
+    height: 40px;
     min-width: 150px;
     background: #fff;
     border: 1px solid;
