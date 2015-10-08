@@ -41,17 +41,27 @@ function checkRequiredFields(jqObjects) {
 }
 
 function validateFrom(requiredFields) {
+  var isValid = false;
+
   // check all required fileds
   checkRequiredFields(requiredFields);
 
-  var isInvalid = $("*[aria-invalid]");
-  //if page contains no 'aria-invalid' attribute then form is valid.
-  if (isInvalid.length === 0) {
-    return true;
+  var checkedParticipationElements = $("ul.ss-choices-required input:checked")
+
+  if (checkedParticipationElements.length < 1) {
+    $("ul.ss-choices-required").addClass("required").attr("aria-invalid", true);
+  } else {
+    $("ul.ss-choices-required").removeClass("required").removeAttr("aria-invalid");
   }
 
-  isInvalid.focus();
-  return false;
+  var invalidElements = $("*[aria-invalid]");
+  //if page contains no 'aria-invalid' attribute then form is valid.
+  if (invalidElements.length === 0) {
+    isValid = true;
+  }
+
+  invalidElements.focus();
+  return isValid;
 }
 
 if (window.jQuery) {
