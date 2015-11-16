@@ -304,12 +304,14 @@ nav.page-navigation {
 .nav-justified>li {
     display: table-cell;
     min-width: 1%;
-    width: 20%;
+    width: 20vw;
 }
 
 .nav-justified>li>a {
   color: #00aeff;
   line-height: 30px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .nav-justified>li>a:hover {
@@ -647,6 +649,12 @@ Small Device Styles
     max-width: 480px;
     min-width: 320px;
     font-size: 11px;
+  }
+
+  /* fix overwrite in large screens */
+  .nav-justified>li {
+      display: block;
+      width: 100%
   }
 
   ul.contacts {
