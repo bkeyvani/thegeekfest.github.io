@@ -21,9 +21,9 @@ interest_form: "http://snapsurvey.cpcc.edu/snapwebhost/s.asp?k=151031992390"
 # Where things are
 source:      .
 destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
-data_source: ./_data
+plugins_dir:     ./_plugins
+layouts_dir:     ./_layouts
+data_dir: ./_data
 collections: []
 
 # Handling Reading
@@ -43,7 +43,7 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:      []
+plugins:      []
 
 # Conversion
 markdown:    kramdown
@@ -89,7 +89,7 @@ kramdown:
   entity_output: as_char
   toc_levels:    1..6
   smart_quotes:  lsquo,rsquo,ldquo,rdquo
-  use_coderay:   false
+  enable_coderay:   false
 
   coderay:
   coderay_wrap:              div
