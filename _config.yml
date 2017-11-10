@@ -16,12 +16,7 @@ social-media:
   - "twitter": "https://twitter.com/thegeekfest"
   - "github-alt": "https://github.com/thegeekfest/thegeekfest.github.io"
   - "google-plus": "https://plus.google.com/u/0/+centralpiedmontcommunitycollege/"
-interest_form: "https://docs.google.com/forms/d/e/1FAIpQLSdbJvTlS8GT-zkOHvhuEovdIYTG7Q-qSL1sdfkHQLbJLm0D0g/viewform"
-
-# Where things are
-source:      .
-destination: ./_site
-plugins:     ./_plugins
+interest_form: "http://snapsurvey.cpcc.edu/snapwebhost/s.asp?k=151031992390
 layouts:     ./_layouts
 data_source: ./_data
 collections: []
