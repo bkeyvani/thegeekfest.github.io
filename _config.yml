@@ -1,11 +1,11 @@
 # Analytics info
-google_analytics_id: UA-411531-10
+google_analytics_id: "UA-411531-10"
 
 # For Atom Feed
-domain: thegeekfest.com
-author: THE Geek Fest Team
-email: geekfest@cpcc.edu
-title: THE Geek Fest
+domain: "thegeekfest.com"
+author: "THE Geek Fest Team"
+email: "geekfest@cpcc.edu"
+title: "THE Geek Fest"
 
 # Event Information
 event_date: "Thursday, November 9th, 2017"
@@ -16,7 +16,7 @@ social-media:
   - "twitter": "https://twitter.com/thegeekfest"
   - "github-alt": "https://github.com/thegeekfest/thegeekfest.github.io"
   - "google-plus": "https://plus.google.com/u/0/+centralpiedmontcommunitycollege/"
-interest_form: "http://snapsurvey.cpcc.edu/snapwebhost/s.asp?k=151031992390
+interest_form: "http://snapsurvey.cpcc.edu/snapwebhost/s.asp?k=151031992390"
 
 # Where things are
 source:      .
